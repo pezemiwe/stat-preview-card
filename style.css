@@ -4,6 +4,7 @@ body {
 }
 .parent {
   display: flex;
+  flex-direction: row;
   margin: 150px 120px 150px 120px;
   border-radius: 7px;
   overflow: hidden;
@@ -20,7 +21,8 @@ body {
   background-color: hsl(244, 38%, 16%);
   color: hsl(0, 0%, 100%);
   box-sizing: border-box;
-  padding: 30px 120px 1px 90px;
+  padding: 30px 120px 35px 90px;
+  margin: 2;
 }
 
 span {
@@ -32,7 +34,9 @@ p {
 .child {
   display: flex;
   flex-direction: row;
+  text-align: center;
   justify-content: space-between;
+
 }
 .right {
   width: 100%;
@@ -42,11 +46,12 @@ p {
       hsla(277, 64%, 61%, 0.3),
       hsla(277, 64%, 61%, 0.3)
     ),
-    url(/images/image-header-desktop.jpg) no-repeat;
+    url(./images/image-header-desktop.jpg) no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375gitpx) {
   .parent {
+    display: flex;
     flex-direction: column-reverse;
     margin: 50px 20px;
     border-radius: 7px;
@@ -54,15 +59,20 @@ p {
     font-family: "Inter", sans-serif;
     font-size: 15px;
   }
+  .child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   .right {
     background: linear-gradient(
         hsla(277, 64%, 61%, 0.3),
         hsla(277, 64%, 61%, 0.3)
       )
-      url(/images/image-header-mobile.jpg) no-repeat center;
+      url(./images/image-header-mobile.jpg) no-repeat center;
     background-size: cover;
   }
-}
 .left {
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -70,8 +80,3 @@ p {
   padding: 25px 35px;
   text-align: center;
 }
-.child {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
