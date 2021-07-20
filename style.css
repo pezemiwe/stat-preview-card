@@ -49,7 +49,7 @@ p {
     url(./images/image-header-desktop.jpg) no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 375gitpx) {
+@media screen and (max-width: 375px) {
   .parent {
     display: flex;
     flex-direction: column-reverse;

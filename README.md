@@ -1,5 +1,7 @@
 # Frontend Mentor - Stats preview card component
 
+## Url: [https://pezemiwe.github.io/stat-preview-card/](https://pezemiwe.github.io/stat-preview-card/https://pezemiwe.github.io/stat-preview-card/)
+
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
